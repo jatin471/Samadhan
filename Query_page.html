@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Page</title>
+    <style>
+        * {
+            background-color: aqua;
+
+        }
+
+        .container1,
+        .container2,
+        .container3 {
+            display: flex;
+            margin: 10px;
+            padding: 15px;
+            height: 400px;
+        }
+
+        h1 {
+
+            font-size: 70px;
+            font-family: American Typewriter;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-family: SignPainter;
+        }
+
+
+        .box {
+            color: white;
+            margin: auto;
+            margin-top: 22.24px;
+            margin-bottom: 22.24px;
+            border: 2px solid green;
+            height: 350px;
+            width: 22%;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            background-color: rgb(0, 255, 30);
+            transition: background-color 0.5s ease-out 100ms;
+            transition: transform .6s;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .box:hover {
+            background-color: rgb(255, 0, 0);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1 align="center"><u>SAMADHAN</u><b></b> </h1>
+    <h2 align="center"><b><u>Choose your query </u></b></h1>
+
+
+        <div class="container1">
+
+            <div class="box" onclick="location.href='damagedRoad.html';"
+                style="background-image:url('damagedRoad.jpg');">
+                Road Damaged
+            </div>
+
+            <div class="box" onclick="location.href='wasteCollection.html';"
+                style="background-image:url('wasteManagement.jpg'); color:black">
+                Waste Collection
+
+            </div>
+            <div class="box" onclick="location.href='electricity.html';"
+                style="background-image:url('no-electricity-power.jpg');">
+                Electricity<br><br>
+            </div>
+        </div>
+
+
+        <div class="container2">
+
+            <div class="box" onclick="location.href='waterSupply.html';"
+                style="background-image:url('Water-Distribution-System.jpg'); ">
+
+            </div>
+            <!-- <div class="box" onclick="location.href='drainageIssue.html';" style="background-image:url('drainageIssue.jpeg');color:black">
+            Drainage Issue
+        </div>
+
+        <div class="box" onclick="location.href='foodSecurity.html';" style="background-image:url('foodsecurity.jpg');">
+            Food Security
+        </div> -->
+            <div class="box" onclick="location.href='crime.html';" style="background-image:url('crime.webp');">
+            </div>
+            <div class="box" onclick="location.href='Others.html';">
+                Others<br><br>
+
+                Religious Conflict<br>
+                Unemployment <br>
+                Education <br>
+                Transport <br>
+                Health<br>
+
+            </div>
+
+        </div>
+
+        <!-- 
+        <div class="container3">
+            
+            <div class="box" onclick="location.href='healthcare.html';" style="background-image:url('healthcare.png'); ">
+                
+            </div>
+            
+            
+
+    </div> -->
+
+</body>
+
+</html>

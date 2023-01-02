@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+    <title>Registration Page</title>
+    <script>
+        function validateForm() {
+            //collect form data in JavaScript variables
+            var pw1 = document.getElementById("pswd1").value;
+            var pw2 = document.getElementById("pswd2").value;
+        
+
+            //check empty password field
+            if (pw1 == "") {
+                document.getElementById("message1").innerHTML = "**Fill the password please!";
+                return false;
+            }
+
+            //check empty confirm password field
+            if (pw2 == "") {
+                document.getElementById("message2").innerHTML = "**Enter the password please!";
+                return false;
+            }
+
+            //minimum password length validation
+            if (pw1.length < 8) {
+                document.getElementById("message1").innerHTML = "**Password length must be atleast 8 characters";
+                return false;
+            }
+
+            //maximum length of password validation
+            if (pw1.length > 15) {
+                document.getElementById("message1").innerHTML = "**Password length must not exceed 15 characters";
+                return false;
+            }
+
+            if (pw1 != pw2) {
+                document.getElementById("message2").innerHTML = "**Passwords are not same";
+                return false;
+            } else {
+                alert("Your password created successfully");
+                document.write("JavaScript form has been submitted successfully");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <form action="backend.php" onsubmit="return validateForm()">
+        <div>
+            Name : <input type="text" name="myName" id="fname" value="">
+        </div>
+        <br>
+        <div>
+            Phone No: <input type="tel" name="myphonenum" pattern="[0-9]{2}-[0-9]{10}" placeholder="91-0123456789">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date Of Birth: <input type="date" name="mybirthdate">
+        </div>
+
+        <br>
+        <div>
+            Aadhar No: <input type="tel" name="myaadharnum" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                placeholder="0123-4567-8910">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            State : <input type="text" name="mystate" id="statename">
+        </div>
+        <br>
+        <div>
+            District : <input type="text" name="mydistrict" id="districtname">
+        </div>
+        <br>
+        <div>
+            City : <input type="text" name="mycity" id="cityname">
+        </div>
+        <br>
+        <div>
+            Pincode : <input type="tel" name="mypincodenum" pattern="[0-9]{6}" placeholder="465333">
+        </div>
+        <br>
+        <div>
+            Address : <input type="text" name="myaddress" id="address">
+        </div>
+
+        <br>
+        <div>
+            <td> Create Password* </td>
+            <input type="password" name="pswd" id="pswd1" value="">
+            <span id="message1"> </span> <br><br>
+
+            <!?Enter confirm password -->
+                <td> Confirm Password* </td>
+                <input type="password" id="pswd2" value="">
+                <span id="message2"> </span> <br><br>
+
+        </div>
+
+
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

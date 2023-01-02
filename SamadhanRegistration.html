@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Courgette&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Courgette&family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Courgette&family=Great+Vibes&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+</head>
+        <body style="background-image: url('https://c4.wallpaperflare.com/wallpaper/752/194/470/circles-highlights-background-form-wallpaper-preview.jpg');">
+    <center>
+        <h1>Registration Page</h1>
+    </center>
+
+    <form action="backend.php" method="post">
+      <table cellpadding="8%" align="Center">
+        <tbody align="Center"  style=" background-image: url('https://cdn.pixabay.com/photo/2017/03/21/02/00/user-2160923__340.png');">
+            <tr>
+                <td>
+                    Name :
+                </td>
+                <td>
+                    <input type="text" name="myName" id="fname" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone No:
+                </td>
+                <td>
+                    <input type="tel" name="myphonenum" pattern="[0-9]{10}" placeholder="9123456789">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="email" name="myEmail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date Of Birth:
+                </td>
+                <td>
+                    <input type="date" name="mybirthdate">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aadhar No:
+                </td>
+                <td>
+                    <input type="tel" name="myaadharnum" pattern="[0-9]{12}"
+                        placeholder="0123-4567-8910">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    Male <input type="radio" value="Male" name="myGender">
+                    Female <input type="radio" value="Female" name="myGender">
+                    Other <input type="radio" value="Other" name="myGender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    State :
+                </td>
+                <td>
+                    <input type="text" name="mystate" id="statename">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    District :
+                </td>
+                <td>
+                    <input type="text" name="mydistrict" id="districtname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    City :
+                </td>
+                <td>
+                    <input type="text" name="mycity" id="cityname">
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    State :
+                </td>
+                <td>
+                    <input type="text" name="mystate" id="statename">
+                </td>
+            </tr> -->
+            <tr>
+                <td>
+                    Pincode :
+                </td>
+                <td>
+                    <input type="tel" name="mypincodenum" pattern="[0-9]{6}" placeholder="465333">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address :
+                </td>
+                <td>
+                    <input type="text" name="myaddress" id="address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Create Password*
+                </td>
+                <td>
+                    <input type="password" id="pswd1" value="" name="pswd">
+                    <span id="message1"> </span>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    Confirm Password*
+                </td>
+                <td>
+                    <input type="password" id="pswd2" value="">
+                    <span id="message2">
+                </td>
+            </tr> -->
+            <tr>
+                <td>
+                    <input type="submit" class="btn" value="Submit Now">
+
+                </td>
+                <td>
+                    <input type="reset" class="btn" value="Reset Now">
+                </td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+    </form>
+
+</body>
+<style>
+   .btn{
+    border-radius: 10px;
+    background-color:rgba(53, 147, 146, 0.831);
+    color:darkolivegreen;
+    
+   }
+    
+    td {
+        font-family: 'Abyssinica SIL', serif;
+        font-family: 'Alkalami', serif;
+        background-color: rgb(63 94 133 / 0%);
+    color: rgb(105 74 125);
+    }
+    input{
+         color:black; 
+    
+    }
+    .btn:hover {
+        font-family: 'Abyssinica SIL', serif;
+        font-family: 'Alkalami', serif;
+        background-color:rgba(90, 164, 162, 0.831);
+         color:rgb(9, 15, 194); 
+    }
+
+    h1 {
+        font-family: 'Abyssinica SIL', serif;
+        font-family: 'Alkalami', serif;
+        font-family: 'Courgette', cursive;
+        color:#C9D6DF;
+    }
+    h2{
+        font-family: 'Abyssinica SIL', serif;
+font-family: 'Alkalami', serif;
+font-family: 'Courgette', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Source Serif Pro', serif;
+color: #FFB6B9;
+    }
+    
+</style>
+
+</html>
