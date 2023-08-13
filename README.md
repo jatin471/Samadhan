@@ -2,7 +2,7 @@
 
 Samadhan - Community Issue Resolution Website
 
-Samadhan is a comprehensive community-driven website that aims to address common issues faced by people in society, such as electricity problems, road damage, sanitation issues, and more. By leveraging a combination of HTML, CSS, JavaScript, PHP, and MySQL, Samadhan provides a platform for individuals to report problems, collaborate, and find solutions together.
+Samadhan is a comprehensive community-driven website that aims to address common issues faced by people in society, such as electricity problems, road damage, sanitation issues, and more. By leveraging a combination of HTML, CSS, JavaScript, PHP, and MySQL, Samadhan provides a platform for individuals to report problems, collaborate, and find solutions .
 
 Features
 
